@@ -1,0 +1,21 @@
+CREATE DATABASE oroneisone;
+USE oroneisone;
+CREATE TABLE users(
+    id INTEGER,
+    Username VARCHAR(30),
+    Password VARCHAR(64)
+);
+
+INSERT INTO users (id, Username, Password) VALUES
+(1, 'Zane', 'KEY: Zaned5ae2b50b69a80ba628efa9a444'),
+(2, 'Preston', 'PrestonuitwnstTVTozBrQ8LFvKin8nYlBXgi'),
+(3, 'Quentin', 'Quentin98LV5Gcharq5y0c9vgCq66'),
+(4, 'Megan', 'MegandKa0T22zoPngQyl7Cf5'),
+(5, 'Tanner', 'Tannerpassword');
+
+GRANT SELECT on oroneisone.users to 'haypp_hxar'@'localhost' identified by 'dtIwRdKa0T22zoPngQyl7Cf5gcgYPC';
+
+USE mysql;
+UPDATE user set password=PASSWORD("798LV5Gcharq5y0c9vgCq66TZBXNmL") where User='root';
+
+FLUSH privileges;
